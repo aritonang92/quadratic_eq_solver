@@ -13,7 +13,7 @@ import streamlit as st
 st.title("A Simple Quadratic Equation Solver")
 
 st.latex(r'''
-    X = \frac{-b\pm\sqrt{b^2 - 4ac}}{2a}
+    X_12 = \frac{-b\pm\sqrt{b^2 - 4ac}}{2a}
     ''')
 
 name = st.text_input("Enter your name"," ")
