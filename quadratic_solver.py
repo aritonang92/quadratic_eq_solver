@@ -21,5 +21,5 @@ y = st.number_input("input your y:")
 
 df = x**2 - 2-y + 17
 
-st.write("hasilnya adalah: {df}")
+st.write("hasilnya adalah:", df)
 
