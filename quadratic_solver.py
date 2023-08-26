@@ -20,10 +20,15 @@ name = st.text_input("Enter your name"," ")
 
 st.write(f"Hello {name}!")
 
-x = st.number_input("input your x:")
-y = st.number_input("input your y:")
 
-df = x**2 - 2-y + 17
+a = st.number_input("input your a:")
+b = st.number_input("input your b:")
+c = st.number_input("input your c:")
 
-st.write("hasilnya adalah:", df)
+
+hasil1 = -b + ((b**2 - 4*a*c)**0.5) / 2*a
+hasil2 = -b - ((b**2 - 4*a*c)**0.5) / 2*a
+
+
+st.write("Maka nilai akar akar persamaan adalah", "X1 = ",hasil1, "dan X2 = ", hasil2)
 
