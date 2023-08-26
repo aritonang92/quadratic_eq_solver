@@ -26,8 +26,8 @@ b = st.number_input("input your b:")
 c = st.number_input("input your c:")
 
 
-hasil1 = -b + ((b**2 - 4*a*c)**0.5 / 2*a)
-hasil2 = -b - ((b**2 - 4*a*c)**0.5 / 2*a)
+hasil1 = (-1*b) + (((b**2 - 4*a*c)**0.5) / 2*a)
+hasil2 = (-1*b) - (((b**2 - 4*a*c)**0.5) / 2*a)
 
 
 st.write("Maka nilai akar akar persamaan adalah", "X1 = ",hasil1, "dan X2 = ", hasil2)
