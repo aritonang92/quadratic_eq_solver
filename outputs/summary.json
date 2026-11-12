@@ -1,0 +1,207 @@
+{
+  "source": "simulated BankChurners look-alike (ground truth known)",
+  "metrics": {
+    "roc_auc": 0.9007294361339182,
+    "pr_auc": 0.6807169283038733,
+    "f1": 0.6145552560646901,
+    "balanced_accuracy": 0.7540771566752896,
+    "recall_attrition": 0.5588235294117647,
+    "precision_attrition": 0.6826347305389222,
+    "confusion": {
+      "tn": 1986,
+      "fp": 106,
+      "fn": 180,
+      "tp": 228
+    },
+    "n_test": 2500
+  },
+  "permutation_importance": [
+    {
+      "feature": "Total_Trans_Ct",
+      "importance": 0.1746241517639561,
+      "std": 0.011284859167930643
+    },
+    {
+      "feature": "Total_Revolving_Bal",
+      "importance": 0.047548785288493975,
+      "std": 0.00581515794208438
+    },
+    {
+      "feature": "Total_Ct_Chng_Q4_Q1",
+      "importance": 0.038333708244291984,
+      "std": 0.0037048056899468794
+    },
+    {
+      "feature": "Contacts_Count_12_mon",
+      "importance": 0.02196931353803473,
+      "std": 0.004076682797466968
+    },
+    {
+      "feature": "Total_Relationship_Count",
+      "importance": 0.020884883590147306,
+      "std": 0.004062447138257889
+    },
+    {
+      "feature": "Months_Inactive_12_mon",
+      "importance": 0.011772438420875076,
+      "std": 0.0041176682878927605
+    },
+    {
+      "feature": "Customer_Age",
+      "importance": 0.002065993701496005,
+      "std": 0.0006976323364786056
+    },
+    {
+      "feature": "Total_Trans_Amt",
+      "importance": 0.0015343230982641566,
+      "std": 0.0008723610870005087
+    },
+    {
+      "feature": "Avg_Utilization_Ratio",
+      "importance": 0.0011425411464776936,
+      "std": 0.00044302248181738986
+    },
+    {
+      "feature": "Dependent_count",
+      "importance": 0.0005265155775503238,
+      "std": 0.0006590927222239965
+    },
+    {
+      "feature": "Gender",
+      "importance": 5.6236643797058505e-05,
+      "std": 0.00046080673905049877
+    },
+    {
+      "feature": "Marital_Status",
+      "importance": 1.3590522250939152e-05,
+      "std": 0.0008236092133392829
+    },
+    {
+      "feature": "Total_Amt_Chng_Q4_Q1",
+      "importance": -7.40449143328048e-05,
+      "std": 0.0007989456245476341
+    },
+    {
+      "feature": "Credit_Limit",
+      "importance": -0.000515971206838417,
+      "std": 0.0003505472283627758
+    },
+    {
+      "feature": "Card_Category",
+      "importance": -0.0006492989165073793,
+      "std": 0.0005122959464715896
+    },
+    {
+      "feature": "Months_on_book",
+      "importance": -0.0008062928804408953,
+      "std": 0.0006565051120284016
+    },
+    {
+      "feature": "Income_Category",
+      "importance": -0.0009899992501780862,
+      "std": 0.0007172243137442131
+    },
+    {
+      "feature": "Education_Level",
+      "importance": -0.0010645128032093164,
+      "std": 0.0007420511630920429
+    }
+  ],
+  "mean_abs_shap": {
+    "Total_Trans_Ct": 0.11418935852355962,
+    "Total_Revolving_Bal": 0.06425805342869133,
+    "Total_Ct_Chng_Q4_Q1": 0.04428845004362464,
+    "Contacts_Count_12_mon": 0.040891804080731294,
+    "Total_Relationship_Count": 0.03867879370661309,
+    "Months_Inactive_12_mon": 0.028877312242542547,
+    "Income_Category": 0.014299839971033996,
+    "Total_Trans_Amt": 0.012666640516613781,
+    "Education_Level": 0.007493744844369177,
+    "Customer_Age": 0.006956647557058702,
+    "Total_Amt_Chng_Q4_Q1": 0.006035202767574496,
+    "Months_on_book": 0.005003004597162469,
+    "Marital_Status": 0.004964823283942296,
+    "Dependent_count": 0.004612681531524205,
+    "Card_Category": 0.0045254747185171805,
+    "Gender": 0.004357978374203719,
+    "Avg_Utilization_Ratio": 0.0038486207827606493,
+    "Credit_Limit": 0.0030363893016800434
+  },
+  "surrogate_fidelity": 0.8812,
+  "faithfulness": {
+    "shap_deletion_auc": 0.1986267339648907,
+    "random_deletion_auc": 0.5522362443201557,
+    "win_rate": 1.0
+  },
+  "agreement": {
+    "shapley": {
+      "shapley": 1.0,
+      "lime": 0.8640000000000001,
+      "ig": 0.8079999999999999
+    },
+    "lime": {
+      "shapley": 0.8640000000000001,
+      "lime": 1.0,
+      "ig": 0.84
+    },
+    "ig": {
+      "shapley": 0.8079999999999999,
+      "lime": 0.84,
+      "ig": 1.0
+    }
+  },
+  "ground_truth": {
+    "k": 7,
+    "top_k": [
+      "Total_Trans_Ct",
+      "Total_Revolving_Bal",
+      "Total_Ct_Chng_Q4_Q1",
+      "Contacts_Count_12_mon",
+      "Total_Relationship_Count",
+      "Months_Inactive_12_mon",
+      "Income_Category"
+    ],
+    "hits": [
+      "Contacts_Count_12_mon",
+      "Months_Inactive_12_mon",
+      "Total_Ct_Chng_Q4_Q1",
+      "Total_Relationship_Count",
+      "Total_Revolving_Bal",
+      "Total_Trans_Ct"
+    ],
+    "recall": 0.8571428571428571,
+    "best_demographic_rank": 7,
+    "n_features": 18
+  },
+  "checks": {
+    "lime_r2": 0.24633089298305483,
+    "ig_completeness_gap": 0.0047555085738779646,
+    "shap_additivity_gap": 1.1102230246251565e-16
+  },
+  "cases": [
+    {
+      "id": 758246413,
+      "label": "Highest-risk customer who actually left",
+      "actually_left": true,
+      "p_leave": 0.9951265170477854
+    },
+    {
+      "id": 790607577,
+      "label": "Borderline case (model on the fence)",
+      "actually_left": false,
+      "p_leave": 0.49905596268719515
+    },
+    {
+      "id": 786822687,
+      "label": "Most confidently retained customer",
+      "actually_left": false,
+      "p_leave": 8.40270497639159e-06
+    },
+    {
+      "id": 762867642,
+      "label": "False alarm: predicted to leave, but stayed",
+      "actually_left": false,
+      "p_leave": 0.9683631494028456
+    }
+  ]
+}
